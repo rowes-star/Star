@@ -67,3 +67,87 @@ async def yas(client, message):
             ]
         ),
     )
+
+
+@app.on_message(
+    command(["سيمو","اسلام","Simo","Islam","الخول","SiMo"])
+    & filters.group
+    & ~filters.edited
+)
+async def yas(client, message):
+    usr = await client.get_chat("DaRrKNneSs_1")
+    name = usr.first_name
+    photo = await app.download_media(usr.photo.big_file_id)
+    await message.reply_photo(photo,       caption=f"**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────\n\n¦ᦔꫀꪜ :{name}\n ¦ꪊ𝘴ꫀ𝘳 :@{usr.username}\n ¦Ꭵժ :`{usr.id}`\n ¦ႦᎥ᥆ :{usr.bio}\n\n**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**", 
+    reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        name, url=f"https://t.me/{usr.username}")
+                ],
+            ]
+        ),
+    )
+    
+
+
+@app.on_message(
+    command(["/api"])
+    & ~filters.edited
+    
+)
+async def huhh(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://graph.org/file/abc6b25ceb81316ab1e1e.jpg",
+        caption=f"""**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**\nمرحبا بك عزيزي {message.from_user.mention} في قسم الذكاء الاصتناعي الخاص بسورس star \nلتتمكن من استخدام اوامر الذكاء الاصتناعي اكتب \n /gpt + السؤال بالاسفل👇\n**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "᳒- 𝙍 𝙊 𝙒 𝙀 𝙎 - ", url=f"https://t.me/RQ_X0"), 
+                 ],[ 
+                 
+                    InlineKeyboardButton(
+                        "- 𝙎 𝙄 𝙈 𝙊 -", url=f"https://t.me/DaRrKNneSs_1"),
+                        
+                    InlineKeyboardButton(
+                        "𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍", url=f"https://t.me/S0URCE_STAR"),
+                ],
+
+            ]
+
+        ),
+
+    )
+
+
+
+@app.on_message(
+    command(["قرأن"])
+    & ~filters.edited
+    
+)
+async def huhh(client: Client, message: Message):
+    await message.reply_photo(
+        photo=f"https://graph.org/file/abc6b25ceb81316ab1e1e.jpg",
+        caption=f"""**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**\nمرحبا بك عزيزي {message.from_user.mention} في قسم تشغيل القرأن الخاص بسورس cr\nلتتمكن من استخدام اوامر القرأن اكتب \n سورة + اسم السورة بالاسفل👇\n**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**""",
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(
+                        "᳒- 𝙎 𝙄 𝙈 𝙊 -", url=f"https://t.me/DaRrKNneSs_1"), 
+                 ],[ 
+                
+                    InlineKeyboardButton(
+                        "「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」", url=f"https://t.me/S0URCE_STAR"),
+                ],
+
+            ]
+
+        ),
+
+    )
+
+
+
+    
