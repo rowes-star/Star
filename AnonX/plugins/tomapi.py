@@ -22,7 +22,7 @@ from pyrogram.errors import MessageNotModified
 async def cr_source(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://graph.org/file/abc6b25ceb81316ab1e1e.jpg",
-        caption=f"""****\nمرحبا بك عزيزي {message.from_user.mention}\nانا بوت الذكاء الاصطناعي الخاص بسورس cr \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**⩹━★⊷━⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝━⊶★━⩺**""",
+        caption=f"""****\nمرحبا بك عزيزي {message.from_user.mention}\nانا بوت الذكاء الاصطناعي الخاص بسورس star \nلمعرفة الاوامر اضغط على الأزرار بالأسفل👇\n**──── 「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」────**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -36,7 +36,7 @@ async def cr_source(client: Client, message: Message):
                 ],[
                 
                     InlineKeyboardButton(
-                        "★⌞ 𝘾𝙍 • 𝙎𝙊𝙐𝙍𝘾𝙀 ⌝⚡", url=f"https://t.me/pp_g3"),
+                        "「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」", url=f"http://t.me/S0URCE_STAR"),
                 ],
 
             ]
