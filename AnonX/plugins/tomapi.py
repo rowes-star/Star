@@ -30,10 +30,10 @@ async def cr_source(client: Client, message: Message):
                         "طريقة الإستخدام", callback_data="usage"), 
                  ],[
                     InlineKeyboardButton(
-                        "𝙏َِ𝙊َِ𝙈ِ", url=f"https://t.me/DEV_TOM"),
+                        "- 𝙍 𝙊 𝙒 𝙀 𝙎 - ", url=f"https://t.me/RQ_X0"),
                     InlineKeyboardButton(
-                        "ρ᥆kᥱꪔ᥆ꪀ", url=f"https://t.me/devpokemon"),
-                ],[
+                        "- 𝙎 𝙄 𝙈 𝙊 -", url=f"https://t.me/devpokemon"),
+                 ],[
                 
                     InlineKeyboardButton(
                         "「 𝙎𝙊𝙐𝙍𝘾𝙀 𝙎𝙏𝘼𝙍 」", url=f"http://t.me/S0URCE_STAR"),
